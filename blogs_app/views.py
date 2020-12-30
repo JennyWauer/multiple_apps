@@ -21,3 +21,6 @@ def edit(request, number):
         'number': number
     }
     return render(request, 'edit.html', context)
+
+def delete(request, number):
+    return redirect('/blogs')
